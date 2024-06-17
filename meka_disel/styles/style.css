@@ -248,7 +248,7 @@ nav.active {
 .nav-link:is(:hover, :focus-visible, .active) {transform: translateX(10px);}
 
 .header-action {
-    border-block-start: 1px solid var(--ic-light);
+    border-block-start: 1px solid var(--ic-gold-1);
     margin-block-start: auto;
     padding-block-start: 20px;
     display: flex;
@@ -281,4 +281,10 @@ nav.active {
 .overlay.active {
     visibility: visible;
     opacity: 0.5;
+}
+
+@media (max-width: 450px) {
+    .header-action {
+    margin-block-start: 100%;
+    }
 }
