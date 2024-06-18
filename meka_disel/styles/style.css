@@ -59,6 +59,7 @@ html {
 }
 
 body {
+    height: 2000px;
     background-color: var(--bg-dark-grey);
     color: var(--txt-white);
     line-height: 1.8;
@@ -172,7 +173,7 @@ header {
 }
 
 header.active {
-    box-shadow: 0 2px 8px #f2f2f21a;
+    box-shadow: 0 1px 4px var(--ic-gold-3);
     background-color: var(--bg-dark-grey);
     position: fixed;
     animation: slideIn 0.5s ease forwards;
@@ -189,7 +190,7 @@ header .container {
     align-items: center;
 }
 
-header .logo > img {width: 160px; height: 40px;}
+header .logo > img {width: 160px;}
 
 nav {
     background-color: var(--bg-black);
