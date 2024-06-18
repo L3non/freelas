@@ -285,7 +285,7 @@ nav.active {
 }
 
 @media (max-width: 450px) {
-    .header-action {
-    margin-block-start: 100%;
+    nav {
+    height: 100%;
     }
 }
