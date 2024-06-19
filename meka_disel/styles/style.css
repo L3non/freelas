@@ -59,7 +59,6 @@ html {
 }
 
 body {
-    height: 2000px;
     background-color: var(--bg-dark-grey);
     color: var(--txt-white);
     line-height: 1.8;
@@ -67,7 +66,7 @@ body {
 }
 
 body.nav-active {overflow: hidden;}
-.container {padding-inline: 16px;}
+.container {padding-inline: 15px;}
 
 a, img, button, ion-icon {
     display: block;
@@ -107,6 +106,22 @@ button {
 .btn-primary:is(:hover, :focus-visible) {
     box-shadow: var(--sd-2);
     background-color: var(--ic-gold-2);
+}
+
+.section {margin: 30px 15px;}
+
+.banner {
+    border-radius: 15px;
+    width: 100%;
+    max-height:200px;
+}
+
+.img {width: 50%; height: 50vh;}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
     /* == == == == Preloader == == == == */
@@ -164,8 +179,10 @@ button {
     /* == == == == Header == == == == */
 
 header {
+    background-color: var(--bg-dark-grey);
+    box-shadow: 0 1px 4px var(--ic-gold-3);
     width: 100%;
-    padding-block: 30px;
+    padding-block: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -173,8 +190,6 @@ header {
 }
 
 header.active {
-    box-shadow: 0 1px 4px var(--ic-gold-3);
-    background-color: var(--bg-dark-grey);
     position: fixed;
     animation: slideIn 0.5s ease forwards;
 }
@@ -284,8 +299,36 @@ nav.active {
     opacity: 0.5;
 }
 
+    /* == == == == Main == == == == */
+
+main.section {
+    background-color: red;
+    margin-top: 115px;
+    height: 84vh;
+}
+
+#hero {
+    background-color: blue;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* == == == == Responsiveness == == == == */
+
 @media (max-width: 450px) {
-    nav {
-    height: 100%;
+        /* == == == == Global == == == == */
+
+    .container {padding-inline: 10px;}
+    .section {margin: 20px 10px;}
+
+        /* == == == == Header == == == == */
+
+    nav {height: 100%;}
+
+        /*== == == == Main == == == == */
+
+    #hero {
+        flex-direction: column;
     }
 }
