@@ -308,7 +308,7 @@ section#main {
 
 main.section {
     background-color: red;
-    margin-top: 115px;
+    padding-top: 115px;
     /*height: calc(100vh - 114px);*/
 }
 
