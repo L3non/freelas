@@ -60,13 +60,13 @@ html {
 
 body {
     background-color: var(--bg-dark-grey);
-    color: var(--txt-white);
+    color: var(--ic-light);
     line-height: 1.8;
     font-size: var(--fontSize-6);
 }
 
 body.nav-active {overflow: hidden;}
-.container {padding-inline: 15px;}
+.container {padding-inline: 20px;}
 
 a, img, button, ion-icon {
     display: block;
@@ -106,21 +106,6 @@ button {
 .btn-primary:is(:hover, :focus-visible) {
     box-shadow: var(--sd-2);
     background-color: var(--ic-gold-2);
-}
-
-
-.banner {
-    border-radius: 15px;
-    width: 100%;
-    max-height:200px;
-}
-
-.img {width: 50%; height: 50vh;}
-
-.articles {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
 }
 
     /* == == == == Preloader == == == == */
@@ -179,7 +164,7 @@ button {
 
 header {
     background-color: var(--bg-dark-grey);
-    box-shadow: 0 1px 4px var(--ic-gold-3);
+    box-shadow: 0 .1px 4px var(--ic-gold-2);
     width: 100%;
     padding-block: 20px;
     position: relative;
@@ -300,20 +285,16 @@ nav.active {
 
     /* == == == == Main == == == == */
 
-section#main {
-    background-color: green;
+main {
     height: 100vh;
 }
 
-.section {
-    background-color: red;
+.banner {
+    margin: 20px 20px;
 }
 
-#hero {
-    background-color: blue;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+.section {
+    margin: 20px 40px;
 }
 
     /* == == == == Responsiveness == == == == */
@@ -327,10 +308,4 @@ section#main {
         /* == == == == Header == == == == */
 
     nav {height: 100%;}
-
-        /*== == == == Main == == == == */
-
-    #hero {
-        flex-direction: column;
-    }
 }
