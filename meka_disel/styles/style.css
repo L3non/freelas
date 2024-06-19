@@ -301,10 +301,15 @@ nav.active {
 
     /* == == == == Main == == == == */
 
+section#main {
+    background-color: green;
+    height: 100vh;
+}
+
 main.section {
     background-color: red;
     margin-top: 115px;
-    height: 84vh;
+    /*height: calc(100vh - 114px);*/
 }
 
 #hero {
