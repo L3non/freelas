@@ -42,6 +42,12 @@
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+
+/* Social medias menu sizes */
+    --size: 5rem;
+    --radius: 11rem;
+    --padding: 20px;
+    --factor: 0;
 }
 
     /* == == == == Global == == == == */
@@ -101,11 +107,11 @@ button {
     transition: var(--transition-1);
 }
 
-.btn-primary {background-color: var(--ic-gold-1);}
+.btn-primary {background-color: var(--ic-gold-2);}
 
 .btn-primary:is(:hover, :focus-visible) {
     box-shadow: var(--sd-2);
-    background-color: var(--ic-gold-2);
+    background-color: var(--ic-gold-1);
 }
 
     /* == == == == Preloader == == == == */
@@ -234,7 +240,7 @@ nav.active {
     content: '';
     opacity: 0;
     border-radius: 5px;
-    background-color: var(--ic-gold-1);
+    background-color: var(--ic-gold-2);
     width: 3px;
     height: 10px;
     position: absolute;
@@ -248,7 +254,7 @@ nav.active {
 .nav-link:is(:hover, :focus-visible, .active) {transform: translateX(10px);}
 
 .header-action {
-    border-block-start: 1px solid var(--ic-gold-1);
+    border-block-start: 1px solid var(--ic-gold-2);
     margin-block-start: auto;
     padding-block-start: 20px;
     display: flex;
@@ -282,6 +288,77 @@ nav.active {
     visibility: visible;
     opacity: 0.5;
 }
+
+    /* == == == == Social media menu == == == == */
+
+menu {
+    position: fixed;
+    bottom: var(--padding);
+    right: var(--padding);
+}
+
+menu > * {
+    box-shadow: 0 0 8px 0 #735f3999;
+    border-radius: 50%;
+    background: var(--ic-gold-2);
+    color: var(--bg-dark-grey);
+    text-decoration: none;
+    position: absolute;
+    display: grid;
+    place-content: center;
+}
+
+menu > .action {
+    opacity: 0;
+    width: var(--size);
+    height: var(--size);
+    bottom: calc(0.35 * var(--size));
+    right: calc(0.35 * var(--size));
+    transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1 * var(--radius) * var(--factor))) rotate(var(--angle));
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+menu > .action:hover, menu > .trigger:hover{
+    box-shadow: 0 0 0 0.35rem #f2d09133;
+    color: var(--ic-light);
+}
+
+menu > .action:nth-child(1) {
+    --angle: -5deg;
+    transition-delay: 0.05;
+}
+
+menu > .action:nth-child(2) {
+    --angle: 30deg;
+    transition-delay: 0.1s;
+}
+
+menu > .action:nth-child(3) {
+    --angle: 65deg;
+    transition-delay: 0.15s;
+}
+
+menu > .action:nth-child(4) {
+    --angle: 100deg;
+    transition-delay: 0.2s;
+}
+
+menu.open > .action {
+    --factor: 1;
+    opacity: 1;
+}
+
+menu > .trigger {
+    width: calc(1.6 * var(--size));
+    height: calc(1.6 * var(--size));
+    font-size: 3rem;
+    bottom: 0;
+    right: 0;
+    transition: box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+menu > .trigger > i {transition: transform 0.25s ease-in-out;}
+menu.open > .trigger > i {transform: rotate(-135deg);}
 
     /* == == == == Main == == == == */
 
