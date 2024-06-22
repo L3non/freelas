@@ -1,6 +1,7 @@
 .banner > img {
     border-radius: 15px;
     width: 100%;
+    margin-top: 105px;
     max-height:250px;
 }
 
@@ -24,6 +25,7 @@
 }
 
 .hero_btn {
+    box-shadow: var(--sd-3);
     border-radius: 15px;
     border: 1px solid var(--ic-gold-2);
     width: 100%;
@@ -41,6 +43,67 @@
 }
 
 i.arrow {
+    font-size: var(--fontSize-3);
+}
+
+    /* == == == == Contacts == == == == */
+
+#contacts {
+    margin: -60px 40px 50px 40px;
+}
+
+#contacts > h2 {
+    margin-bottom: 60px;
+    font-size: var(--fontSize-2);
+}
+
+#contacts > h2::before {
+    content: '';
+    background-color: var(--ic-gold-2);
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    left: 50px;
+    bottom: -105px;
+}
+
+#contacts_itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    box-shadow: var(--sd-3);
+    border-radius: 15px;
+    border: 1px solid var(--ic-gold-2);
+    width: 31%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-1);
+}
+
+.contact:hover {
+    box-shadow: var(--sd-1);
+    background-color: var(--ic-gold-2);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.contact:hover i {color: var(--bg-dark-grey);}
+.contact:hover h3 {color: var(--ic-gold-3);}
+.contact:hover a {
+    color: var(--bg-dark-grey);
+    font-size: var(--fontSize-5);
+}
+
+.contact i {font-size: var(--fontSize-2);}
+
+.contact h3 {
+    color: var(--ic-gold-2);
+    padding: 10px 0;
     font-size: var(--fontSize-3);
 }
 
