@@ -94,7 +94,8 @@ i.arrow {
 
 .contact:hover i {color: var(--bg-dark-grey);}
 .contact:hover h3 {color: var(--ic-gold-3);}
-.contact:hover a {
+
+.contact:hover p {
     color: var(--bg-dark-grey);
     font-size: var(--fontSize-5);
 }
