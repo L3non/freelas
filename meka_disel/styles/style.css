@@ -464,4 +464,11 @@ footer > .container {
         /* == == == == Header == == == == */
 
     nav {height: 100%;}
+
+        /* == == == == Footer == == == == */
+
+    .footer_col {
+        width: 50%;
+        margin-bottom: 20px;
+    }
 }
