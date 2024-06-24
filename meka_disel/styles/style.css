@@ -460,6 +460,7 @@ footer > .container {
 
     .container {padding-inline: 10px;}
     .section {margin: 20px 10px;}
+    main { height: 100%;}
 
         /* == == == == Header == == == == */
 
