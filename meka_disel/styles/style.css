@@ -74,7 +74,7 @@ body {
 }
 
 body.nav-active {overflow: hidden;}
-.container {padding-inline: 20px;}
+.container {padding-inline: 40px;}
 
 a, img, button, ion-icon {
     display: block;
@@ -366,17 +366,9 @@ menu.open > .trigger > i {transform: rotate(-135deg);}
 
     /* == == == == Main == == == == */
 
-main {
-    height: 100vh;
-}
-
-.banner {
-    margin: 20px 20px;
-}
-
-.section {
-    margin: 20px 40px;
-}
+main {height: 100vh;}
+.banner {margin: 20px 40px;}
+.section {margin: 20px 40px;}
 
     /* == == == == Footer == == == == */
 
@@ -460,11 +452,6 @@ footer > .container {
 
     .container {padding-inline: 10px;}
     .section {margin: 20px 10px;}
-    main { height: 100%;}
-
-        /* == == == == Header == == == == */
-
-    nav {height: 100%;}
 
         /* == == == == Footer == == == == */
 
