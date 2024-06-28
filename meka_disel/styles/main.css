@@ -60,9 +60,7 @@ i.arrow {
 
     /* == == == == Contacts == == == == */
 
-#contacts {
-    margin: -60px 40px 50px 40px;
-}
+#contacts {margin: -60px 40px 50px 40px;}
 
 #contacts > h2 {
     border-bottom: 2px solid var(--ic-gold-2);
