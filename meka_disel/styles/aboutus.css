@@ -25,9 +25,7 @@ article img {
     max-height: 600px;
 }
 
-article p {
-    margin: 0 30px;
-}
+article p {margin: 0 30px;}
 
     /* == == == == Responsiveness == == == == */
 

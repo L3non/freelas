@@ -5,9 +5,7 @@
     max-height:250px;
 }
 
-#main_content {
-    display: flex;
-}
+#main_content {display: flex;}
 
 #hero_img {
     border-radius: 15px;
@@ -44,9 +42,7 @@
     justify-content: space-around;
 }
 
-.hero_btn:hover i {
-    color: var(--ic-gold-3);
-}
+.hero_btn:hover i {color: var(--ic-gold-3);}
 
 .hero_btn > i {
     color: var(--ic-gold-2);
@@ -54,9 +50,7 @@
     font-size: var(--fontSize-2);
 }
 
-i.arrow {
-    font-size: var(--fontSize-3);
-}
+i.arrow {font-size: var(--fontSize-3);}
 
     /* == == == == Contacts == == == == */
 
@@ -160,6 +154,7 @@ i.arrow {
     #contacts h2 {margin-bottom: 20px;}
     
     #contacts_itens {flex-direction: column;}
+    
     .contact {
         width: 100%;
         margin-bottom: 20px;
